@@ -14,22 +14,23 @@ The algorithm records the number of times (x=581,y=887), (x=266,y=232), and so o
 distribution of pairs below.
 
 ## Distribution of pairs
-|Frequency of pairs|Unique pairs|
-|0|54934|
-|1|159358|
-|2|231035|
-|3|223434|
-|4|161851|
-|5|94599|
-|6|45803|
-|7|18958|
-|8|6816|
-|9|2376|
-|10|620|
-|11|171|
-|12|38|
-|13|5|
-|14|2|
+Frequency of pairs | Unique pairs
+--- | ---
+0 | 54934
+1 | 159358
+2 | 231035
+3 | 223434
+4 | 161851
+5 | 94599
+6 | 45803
+7 | 18958
+8 | 6816
+9 | 2376
+10 | 620
+11 | 171
+12 | 38
+13 | 5
+14 | 2
 
 ## License
 Copyright 2013 David Edwards
