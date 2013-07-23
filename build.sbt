@@ -1,4 +1,4 @@
-name := "huge-prime-plot"
+name := "huge-prime"
 
 version := "0.1"
 
