@@ -1,6 +1,6 @@
 package com.loopfor.prime
 
-import java.awt.Color
+import java.awt.{AlphaComposite, Color, Font}
 import java.awt.image.BufferedImage
 import java.io.{File, FileReader, Reader}
 import javax.imageio.ImageIO
@@ -39,11 +39,24 @@ object HugePrime {
       } else
         Color.BLACK.getRGB
     }
+
+    // Draw pixels.
     val image = new BufferedImage(X_SIZE, Y_SIZE, BufferedImage.TYPE_INT_RGB)
     for {
       x <- 0 until X_SIZE
       y <- 0 until Y_SIZE
     } image.setRGB(x, y, colorOf(matrix(x)(y)))
+
+    // Draw prime number as watermark.
+    val g = image.createGraphics
+    g.setFont(new Font("Consolas", Font.PLAIN, 108))
+    g.setColor(Color.BLUE)
+    g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_ATOP, 0.25F))
+    val PrimeText = "2^57885161-1"
+    val bounds = g.getFontMetrics.getStringBounds(PrimeText, g)
+    val x = (X_SIZE - bounds.getWidth) / 2
+    val y = Y_SIZE / 2
+    g.drawString(PrimeText, x.toFloat, y.toFloat)
     image
   }
 
