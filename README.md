@@ -2,8 +2,9 @@
 This hack was inspired by the [RGB visualization](http://io9.com/5985749/the-worlds-largest-known-prime-number-in-rgb)
 of the [largest known prime number](http://www.isthe.com/chongo/tech/math/digit/m57885161/prime-c.html).
 
-It essentially constructs a 1000x1000 gray-scale image by setting each individual (x,y) pixel to a color that trends
-from black to white depending on how frequently the (x,y) pair appears adjacent to each other in the prime number.
+It essentially constructs a 4000x4000 gray-scale image by setting each individual (x,y) pixel in a logical 1000x1000
+matrix to a color that trends from black to white depending on how frequently the (x,y) pair appears adjacent to each
+other in the prime number.
 
 For example, given this partial sequence of the most significant digits in the prime:
 ```
