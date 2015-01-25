@@ -11,27 +11,37 @@ For example, given this partial sequence of the most significant digits in the p
 581,887,266,232,246,442,175,100,212,113,232,368,636,370,...
 ```
 
-The algorithm records the number of times (x=581,y=887), (x=266,y=232), and so on, occurs in the sequence. Note the
-distribution of pairs below.
+The algorithm records the number of times (x=581,y=887), (x=887,y=266), (x=266,y=232), and so on, occurs in the sequence.
+Note the distribution of pairs below.
 
 ## Distribution of pairs
 Frequency of pairs | Unique pairs
 --- | ---
-0 | 54934
-1 | 159358
-2 | 231035
-3 | 223434
-4 | 161851
-5 | 94599
-6 | 45803
-7 | 18958
-8 | 6816
-9 | 2376
-10 | 620
-11 | 171
-12 | 38
-13 | 5
-14 | 2
+0 | 2968
+1 | 17528
+2 | 50315
+3 | 97875
+4 | 142694
+5 | 165722
+6 | 159679
+7 | 133283
+8 | 96432
+9 | 62525
+10 | 35995
+11 | 19026
+12 | 9110
+13 | 4108
+14 | 1686
+15 | 657
+16 | 256
+17 | 91
+18 | 33
+19 | 14
+20 | 2
+21 | 0
+22 | 1
+
+![Distribution of pairs](huge-prime-chart.png)
 
 ## License
 Copyright 2013 David Edwards

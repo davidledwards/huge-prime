@@ -79,7 +79,7 @@ object HugePrime {
     @tailrec def generate(ns: Seq[Int]): Matrix = ns take 2 match {
       case Seq(x, y) =>
         matrix(x)(y) += 1
-        generate(ns drop 2)
+        generate(ns drop 1)
       case _ => matrix
     }
     generate(ns)

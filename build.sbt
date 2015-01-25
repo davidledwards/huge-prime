@@ -2,7 +2,7 @@ name := "huge-prime"
 
 organization := "com.loopfor.prime"
 
-version := "0.2"
+version := "0.3"
 
 homepage := Some(url("https://github.com/davidledwards/huge-prime"))
 
@@ -14,7 +14,7 @@ scmInfo := Some(ScmInfo(
   Some("scm:git:https://github.com/davidledwards/huge-prime.git")
 ))
 
-scalaVersion := "2.10.2"
+scalaVersion := "2.11.5"
 
 scalacOptions ++= Seq(
   "-deprecation",
@@ -24,6 +24,6 @@ scalacOptions ++= Seq(
 )
 
 javacOptions ++= Seq(
-  "-source", "1.6",
-  "-target", "1.6"
+  "-source", "1.7",
+  "-target", "1.7"
 )
